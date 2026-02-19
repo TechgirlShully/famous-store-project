@@ -181,6 +181,9 @@ p {
     background: #fff;
     width: 100%;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .figure:hover {
@@ -189,7 +192,8 @@ p {
 }
 
 .figure img {
-    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .image {
