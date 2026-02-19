@@ -179,6 +179,8 @@ p {
     padding: 20px;
     transition: 0.3s;
     background: #fff;
+    width: 100%;
+    overflow: hidden;
 }
 
 .figure:hover {
@@ -186,8 +188,14 @@ p {
     background: gainsboro;
 }
 
+.figure img {
+    max-height: 200px;
+}
+
 .image {
     width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .new {
@@ -346,6 +354,10 @@ p {
 
     .motto {
         flex-direction: column;
+    }
+
+    .figure img{
+        max-height: 150px;
     }
 }
 
