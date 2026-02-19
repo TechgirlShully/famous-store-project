@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 0 4px #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo {
+    width: 90px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.icons {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* HERO SECTION */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.sunglass img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.heading {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+}
+
+.shop {
+    padding: 15px 25px;
+    background: rgb(1, 1, 38);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* SECTION TITLE */
+.pipe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 20px 10px;
+}
+
+/* PRODUCTS */
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.figure {
+    position: relative;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.figure:hover {
+    transform: scale(1.05);
+    background: gainsboro;
+}
+
+.image {
+    width: 100%;
+}
+
+.new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.name {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.new-price {
+    font-weight: bold;
+}
+
+.old {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.cart {
+    background: rgb(1, 1, 38);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* WHY CHOOSE US */
+.container3 {
+    background: url(BACKGROUNDPIC3.jpg) no-repeat center/cover;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.para {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.motto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.notes {
+    font-weight: bold;
+}
+
+.para-notes {
+    font-size: 16px;
+}
+
+/* FOOTER */
+.container4 {
+    background: rgb(1, 1, 38);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.fs, .discover, .world, .inspired {
+    flex: 1 1 200px;
+}
+
+.brands {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.brand {
+    border: 1px solid #eee;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.box {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.sub {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .motto {
+        flex-direction: column;
+    }
+}
